@@ -2,23 +2,23 @@ body, html {
   font-size: 13px;
   color: #202124;
   font-family: arial,sans-serif;
-  }
-  
+}
+
 header{
    height: 60px;
    padding: 6px;
    margin: 0;
-  }
-  
- a{
-    color: black;
-  }
+}
 
-  .image{
+a {
+    color: black;
+}
+
+.image{
     padding:15px;
-  }
-  
- a:hover{
+}
+
+a:hover{
   color: black;
 }
 
@@ -27,15 +27,16 @@ span{
   padding: 8px;
 }
 
-.logo img{
+.logo img {
   height: 92px;
 }
+
 .logo{
-  max-width: 1536px;
-  height: 161.6px;
+  max-width: 1536px; /* !!! */
+  height: 161.6px; /* !!! */
   align-items: flex-end;
   display: flex;
-  flex-direction: row;
+  flex-dirflection: row; /* !!! */
   justify-content: center;
 }
 
@@ -48,16 +49,16 @@ nav{
 }
 
 nav img{
-  border-radius: 100px; 
+  border-radius: 100px;
   width: 32px;
   height: 32px;
 }
 
-.avatar{
- padding: 4px;
+.avatar {
+ padding: 4px; /* !!! */
 }
 
-div .avatar{
+div .avatar {
   padding: 4px;
   width: 100%;
   height: 100%;
@@ -67,17 +68,19 @@ div.dots {
   padding: 4px;
 }
 
-/* main */
+main  {
+   /* Add flex: 1 */
+}
+
  main p{
   margin: 0;
  }
 
-.search{
-  height: 74px;
+.search {
+  height: 74px; /* !!! */
   padding-top: 25px;
   display: flex;
   justify-content: center;
-
 }
 
 .material-symbols-outlined{
@@ -89,7 +92,7 @@ main span{
   height: 25px;
   display: flex;
   color: grey;
-  display: flex;
+  display: flex; /* !!! */
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -101,22 +104,21 @@ main span{
   border: 1px solid lightgrey;
   height: 44px;
   padding: 5px 0px;
-  border-radius: 999px;
+  border-radius: 999px; /* !!! */
   width: 80vw;
   max-width: 582px;
 }
 
-.icon-search:hover{
+.icon-search:hover {
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
 .language1{
-  height: 244px;
-
+  height: 244px; /* !!!!  */
 }
 
 .language{
-  height: 28px;
+  height: 28px;  /* !!!! */
   display: flex;
   justify-content: center;
   color: #5f6368;
@@ -131,16 +133,15 @@ main span{
 .button{
   justify-content: center;
   display: flex;
-
 }
 
-.button button{
+.button button{ /* !!! */
   margin: 25px 4px;
   padding: 8px 18px;
   background-color: #f8f9fa;
-  border: 1px solid #dadce0;
+  border: 1px solid #dadce0; /* !!! */
   outline: none;
-  border: none;
+  border: none; /* !!! */
   cursor: pointer;
   border-radius: 6px;
   font-family: arial,sans-serif;
@@ -168,7 +169,7 @@ footer{
 }
 
 .footer-one{
-  height: 48.6px;
+  height: 48.6px; /* !!! */
 }
 
 footer p{
@@ -184,8 +185,7 @@ footer p{
   justify-content: space-between;
   padding: 0px 20px;
   font-size: 14px;
-  height: 46.8px;
-  
+  height: 46.8px; /* !!! */
 }
 
 .left{
@@ -198,15 +198,21 @@ footer p{
   color: #70757a;
 }
 
-.right{
+.right {
+  display: flex;
   align-items: center;
-  display: flex; 
 }
 
-@media (max-width:500px){
-  
-body{
-  width: 190vw;
+body, html {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
+@media (max-width:500px){ /* !!! */
+  body {
+    width: 190vw;
+  }
 }

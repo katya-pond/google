@@ -1,29 +1,29 @@
 body, html {
   font-size: 13px;
   color: #202124;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
 }
 
-header{
-   height: 60px;
-   padding: 6px;
-   margin: 0;
+header {
+  height: 60px;
+  padding: 6px;
+  margin: 0;
 }
 
 a {
-    color: black;
-}
-
-.image{
-    padding:15px;
-}
-
-a:hover{
   color: black;
 }
 
-span{
-  color:#5f6368;
+.image {
+  padding: 15px;
+}
+
+a:hover {
+  color: black;
+}
+
+span {
+  color: #5f6368;
   padding: 8px;
 }
 
@@ -31,16 +31,19 @@ span{
   height: 92px;
 }
 
-.logo{
-  max-width: 1536px; /* !!! */
-  height: 161.6px; /* !!! */
+.logo {
+  max-width: 1536px;
+  /* !!! */
+  height: 161.6px;
+  /* !!! */
   align-items: flex-end;
   display: flex;
-  flex-dirflection: row; /* !!! */
+  flex-dirflection: row;
+  /* !!! */
   justify-content: center;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: flex-end;
   height: 48px;
@@ -48,14 +51,15 @@ nav{
   padding: 0px 4px 0px 32px;
 }
 
-nav img{
+nav img {
   border-radius: 100px;
   width: 32px;
   height: 32px;
 }
 
 .avatar {
- padding: 4px; /* !!! */
+  padding: 4px;
+  /* !!! */
 }
 
 div .avatar {
@@ -68,43 +72,46 @@ div.dots {
   padding: 4px;
 }
 
-main  {
-   /* Add flex: 1 */
+main {
+  /* Add flex: 1 */
 }
 
- main p{
+main p {
   margin: 0;
- }
+}
 
 .search {
-  height: 74px; /* !!! */
+  height: 74px;
+  /* !!! */
   padding-top: 25px;
   display: flex;
   justify-content: center;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   font-size: 20px;
 }
 
-main span{
+main span {
   padding: 0px;
   height: 25px;
   display: flex;
   color: grey;
-  display: flex; /* !!! */
+  display: flex;
+  /* !!! */
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 
-.icon-search{
+.icon-search {
   display: flex;
   align-items: center;
   border: 1px solid lightgrey;
   height: 44px;
   padding: 5px 0px;
-  border-radius: 999px; /* !!! */
+  border-radius: 999px;
+  /* !!! */
   width: 80vw;
   max-width: 582px;
 }
@@ -113,47 +120,52 @@ main span{
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
-.language1{
-  height: 244px; /* !!!!  */
+.language1 {
+  height: 244px;
+  /* !!!!  */
 }
 
-.language{
-  height: 28px;  /* !!!! */
+.language {
+  height: 28px;
+  /* !!!! */
   display: flex;
   justify-content: center;
   color: #5f6368;
   margin-bottom: 0px;
 }
 
-.language a{
+.language a {
   padding: 0px 3px;
   color: #1a0dab;
 }
 
-.button{
+.button {
   justify-content: center;
   display: flex;
 }
 
-.button button{ /* !!! */
+.button button {
+  /* !!! */
   margin: 25px 4px;
   padding: 8px 18px;
   background-color: #f8f9fa;
-  border: 1px solid #dadce0; /* !!! */
+  border: 1px solid #dadce0;
+  /* !!! */
   outline: none;
-  border: none; /* !!! */
+  border: none;
+  /* !!! */
   cursor: pointer;
   border-radius: 6px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 14px;
   color: #3c4043;
 }
 
-.button button:hover{
+.button button:hover {
   box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
 }
 
-input{
+input {
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -163,16 +175,17 @@ input{
 
 /* footer */
 
-footer{
+footer {
   background-color: #f2f2f2;
   color: #70757a;
 }
 
-.footer-one{
-  height: 48.6px; /* !!! */
+.footer-one {
+  height: 48.6px;
+  /* !!! */
 }
 
-footer p{
+footer p {
   padding: 15px 30px;
   border-bottom: 1px solid #dadce0;
   font-size: 15px;
@@ -180,20 +193,21 @@ footer p{
   height: 48px;
 }
 
-.footer-two{
+.footer-two {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
   font-size: 14px;
-  height: 46.8px; /* !!! */
+  height: 46.8px;
+  /* !!! */
 }
 
-.left{
+.left {
   align-items: center;
   display: flex;
 }
 
-.footer-two a{
+.footer-two a {
   padding: 15px;
   color: #70757a;
 }
@@ -211,7 +225,9 @@ body, html {
   overflow: hidden;
 }
 
-@media (max-width:500px){ /* !!! */
+@media (max-width:500px) {
+
+  /* !!! */
   body {
     width: 190vw;
   }

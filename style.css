@@ -288,8 +288,12 @@ ul {
   }
 }
 
-@media (max-width:320px) {
+@media (max-width:321px) {
   .logo {
     margin-top: 200px;
+  }
+
+  span.material-symbols-outlined {
+    font-size: 9px;
   }
 }

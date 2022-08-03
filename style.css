@@ -2,10 +2,11 @@ body, html {
   font-size: 13px;
   color: #202124;
   font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  height: 60px;
   padding: 6px;
   margin: 0;
 }
@@ -32,14 +33,9 @@ span {
 }
 
 .logo {
-  max-width: 1536px;
-  /* !!! */
-  height: 161.6px;
-  /* !!! */
+  margin-top: 69px;
   align-items: flex-end;
   display: flex;
-  flex-dirflection: row;
-  /* !!! */
   justify-content: center;
 }
 
@@ -57,13 +53,8 @@ nav img {
   height: 32px;
 }
 
-.avatar {
-  padding: 4px;
-  /* !!! */
-}
-
 div .avatar {
-  padding: 4px;
+  padding: 8px;
   width: 100%;
   height: 100%;
 }
@@ -73,7 +64,7 @@ div.dots {
 }
 
 main {
-  /* Add flex: 1 */
+  flex: 1;
 }
 
 main p {
@@ -81,8 +72,6 @@ main p {
 }
 
 .search {
-  height: 74px;
-  /* !!! */
   padding-top: 25px;
   display: flex;
   justify-content: center;
@@ -97,8 +86,6 @@ main span {
   height: 25px;
   display: flex;
   color: grey;
-  display: flex;
-  /* !!! */
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -110,8 +97,7 @@ main span {
   border: 1px solid lightgrey;
   height: 44px;
   padding: 5px 0px;
-  border-radius: 999px;
-  /* !!! */
+  border-radius: 29px;
   width: 80vw;
   max-width: 582px;
 }
@@ -120,14 +106,8 @@ main span {
   box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
-.language1 {
-  height: 244px;
-  /* !!!!  */
-}
 
 .language {
-  height: 28px;
-  /* !!!! */
   display: flex;
   justify-content: center;
   color: #5f6368;
@@ -145,15 +125,11 @@ main span {
 }
 
 .button button {
-  /* !!! */
   margin: 25px 4px;
   padding: 8px 18px;
   background-color: #f8f9fa;
-  border: 1px solid #dadce0;
-  /* !!! */
   outline: none;
   border: none;
-  /* !!! */
   cursor: pointer;
   border-radius: 6px;
   font-family: arial, sans-serif;
@@ -180,31 +156,23 @@ footer {
   color: #70757a;
 }
 
-.footer-one {
-  height: 48.6px;
-  /* !!! */
-}
 
 footer p {
-  padding: 15px 30px;
+  padding: 13px 30px;
   border-bottom: 1px solid #dadce0;
   font-size: 15px;
-  margin: 0;
-  height: 48px;
 }
 
 .footer-two {
   display: flex;
   justify-content: space-between;
-  padding: 0px 20px;
   font-size: 14px;
-  height: 46.8px;
-  /* !!! */
 }
 
 .left {
   align-items: center;
   display: flex;
+  margin-left: 20px;
 }
 
 .footer-two a {
@@ -215,6 +183,7 @@ footer p {
 .right {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 body, html {
@@ -225,10 +194,102 @@ body, html {
   overflow: hidden;
 }
 
-@media (max-width:500px) {
 
-  /* !!! */
-  body {
-    width: 190vw;
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+
+}
+
+@media (max-width:769px) {
+  .nav a {
+    font-size: 9px;
+  }
+}
+
+@media (max-width:426px) {
+  .logo img {
+    height: 39px;
+  }
+
+  nav a {
+    font-size: 6px;
+  }
+
+  nav img {
+    width: 20px;
+    height: 20px;
+  }
+
+  main {
+    font-size: 6px;
+  }
+
+  .button button {
+    margin: 15px 4px;
+    padding: 3px 10px;
+    font-size: 7px;
+  }
+
+  footer p {
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+
+  footer a {
+    font-size: 8px;
+
+  }
+
+  .footer-two a {
+    padding: 3px;
+  }
+
+  .right {
+    margin-right: 2px;
+  }
+
+
+  .left {
+    margin-left: 2px;
+  }
+}
+
+@media (max-width:376px) {
+  .logo {
+    margin-top: 100px;
+  }
+
+  footer p {
+    padding: 5px 10px;
+    font-size: 5px;
+  }
+
+  footer a {
+    font-size: 5px;
+  }
+
+  .right {
+    margin-right: 20px;
+  }
+
+
+  .left {
+    margin-left: 20px;
+  }
+
+  input {
+    padding: 1px 2px;
+    height: 10px;
+  }
+
+  .icon-search {
+    height: 22px;
+  }
+}
+
+@media (max-width:320px) {
+  .logo {
+    margin-top: 200px;
   }
 }
